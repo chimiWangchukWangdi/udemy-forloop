@@ -26,7 +26,7 @@ for (let i = 200; i >= 0; i -= 25) {
 }
 console.log('AFTER THE LOOP!');
 
-//This is an feat
+//This is an feat 1
 
 for (let i = 1; i <= 10; i++) {
 	console.log('OUTER LOOP:', i);
@@ -53,3 +53,20 @@ for (let i = 0; i < gameBoard.length; i++) {
 		totalScore += row[j];
 	}
 }
+
+//This is feat 2
+
+// Pick a target number we are trying to guess
+const target = Math.floor(Math.random() * 10);
+// Make initial guess
+let guess = Math.floor(Math.random() * 10);
+
+// Continue looping while guess is not the target num
+while (guess !== target) {
+	console.log(`Target: ${target} Guess: ${guess}`);
+	// IMPORTANT!!
+	// Update the value of guess each time through the loop
+	guess = Math.floor(Math.random() * 10);
+}
+console.log(`Target: ${target} Guess: ${guess}`);
+console.log(`CONGRATS YOU WIN!!`);
